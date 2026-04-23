@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Riga Nordic University Dashboard</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f7fb;
+      padding: 30px;
+      color: #1f2937;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .header h1 {
+      font-size: 38px;
+    }
+
+    .header p {
+      color: #6b7280;
+      margin-top: 8px;
+    }
+
+    .btn {
+      background: #2563eb;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 14px;
+      cursor: pointer;
+    }
+
+    .grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    .stats {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      margin-bottom: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .card h2 {
+      margin-top: 10px;
+      font-size: 30px;
+    }
+
+    .main {
+      grid-template-columns: 2fr 1fr;
+      margin-bottom: 25px;
+    }
+
+    .lesson-box {
+      background: #eef4ff;
+    }
+
+    .lessons div {
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 16px;
+      margin-top: 12px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .services {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      margin-top: 20px;
+    }
+
+    .service {
+      text-align: center;
+      font-weight: bold;
+      padding: 30px;
+    }
+
+    @media(max-width: 900px) {
+      .main {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="header">
+      <div>
+        <h1>Good Evening, Student</h1>
+        <p>Welcome to Riga Nordic University Dashboard</p>
+      </div>
+      <button class="btn">Riga Nordic University</button>
+    </div>
+
+    <div class="grid stats">
+      <div class="card">
+        <p>Attendance</p>
+        <h2>92%</h2>
+      </div>
+
+      <div class="card">
+        <p>Average Mark</p>
+        <h2>88/100</h2>
+      </div>
+
+      <div class="card">
+        <p>Notifications</p>
+        <h2>5 New</h2>
+      </div>
+    </div>
+
+    <div class="grid main">
+      <div class="card lesson-box">
+        <p>UP NEXT</p>
+        <h2>Business Management</h2>
+        <p>Thursday • Room B301</p>
+        <br>
+        <p><strong>14:00 – 16:00</strong></p>
+        <br>
+        <button class="btn">See Details</button>
+      </div>
+
+      <div class="card">
+        <h3>Coursework Deadlines</h3>
+        <br>
+        <p>Marketing Assignment — 9 Dec</p>
+        <br>
+        <p>Finance Coursework — 14 Dec</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>This Week's Lessons</h3>
+      <div class="lessons">
+        <div>
+          <span>Business Management</span>
+          <strong>14:00</strong>
+        </div>
+        <div>
+          <span>International Finance</span>
+          <strong>16:00</strong>
+        </div>
+        <div>
+          <span>Digital Marketing</span>
+          <strong>10:00</strong>
+        </div>
+      </div>
+    </div>
+
+    <h2 style="margin:30px 0 15px;">Services</h2>
+
+    <div class="grid services">
+      <div class="card service">Student Profile</div>
+      <div class="card service">Learning Board</div>
+      <div class="card service">Academic Staff</div>
+      <div class="card service">Timetable</div>
+    </div>
+
+  </div>
+</body>
+</html>
